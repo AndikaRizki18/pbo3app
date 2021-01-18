@@ -26,7 +26,7 @@ class HomeController extends Controller
     public function masuk(Request $request)
     {
         $user_name = $request->input('txtuser');
-        $pwd = sha1($Request->input('txtpass'));
+        $pwd = sha1($request->input('txtpass'));
         $sys_user = new sysuser();
         $data = $sys_user::where([
             ['uname','=',$user_name],['upass','=',$pwd]

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\sysusers;
+use App\sysuser;
 class DatabaseSeeder extends Seeder
 {
     /**
